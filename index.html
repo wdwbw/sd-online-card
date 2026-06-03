@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黃筱惠 | JUN HE TECHNOLOGY</title>
+    <style>
+        :root {
+            --bg-color: #f4f1eb;       /* 色彩 1：溫潤原麻白 (背景、卡片底色) */
+            --text-main: #333333;      /* 色彩 2：深炭灰 (主文字、主線條、按鈕) */
+            --text-sub: #7f7f7f;       /* 色彩 3：霧面暖灰 (次要字、分開線) */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 24px;
+        }
+
+        .tech-card {
+            width: 100%;
+            max-width: 420px;
+            background: var(--bg-color);
+            border: 1px solid var(--text-main);
+            border-radius: 0px; /* 無印風強調自然直角，不使用圓角 */
+            padding: 40px 30px;
+            position: relative;
+        }
+
+        .header {
+            margin-bottom: 35px;
+        }
+
+        .company {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--text-main);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .name-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 1px solid var(--text-main);
+            padding-bottom: 15px;
+        }
+
+        .name {
+            font-size: 26px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .title {
+            font-size: 13px;
+            color: var(--text-sub);
+            letter-spacing: 1px;
+        }
+
+        .section-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-sub);
+            margin: 25px 0 10px 0;
+        }
+
+        .info-link {
+            display: block;
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 14px;
+            padding: 10px 0;
+            transition: all 0.2s ease;
+            border-bottom: 1px solid var(--text-sub);
+        }
+
+        .info-link:hover {
+            opacity: 0.7;
+            padding-left: 5px;
+        }
+
+        .info-text {
+            font-size: 14px;
+            color: var(--text-main);
+            padding: 10px 0;
+            border-bottom: 1px solid var(--text-sub);
+        }
+
+        .info-link span, .info-text span {
+            display: block;
+            font-size: 10px;
+            color: var(--text-sub);
+            margin-bottom: 2px;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-connect {
+            display: block;
+            text-align: center;
+            border: 1px solid var(--text-main);
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 0px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-top: 35px;
+            transition: all 0.3s ease;
+            background: transparent;
+        }
+
+        .btn-connect:hover {
+            background: var(--text-main);
+            color: var(--bg-color);
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 10px;
+            color: var(--text-sub);
+            margin-top: 30px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tech-card">
+        <div class="header">
+            <div class="company">Jun He Technology Co., Ltd.</div>
+            <div class="name-title">
+                <div class="name">黃筱惠</div>
+                <div class="title">業務部 Sales Dept.</div>
+            </div>
+        </div>
+
+        <div class="section-label">// Contact</div>
+        <a href="tel:+886912756225" class="info-link"><span>Mobile</span>0975-205129</a>
+        <a href="mailto:rd.04@jun-he.com.tw" class="info-link"><span>Email</span>sd.01@jun-he.com.tw</a>
+
+        <div class="section-label">// Changhua Headquarter</div>
+        <a href="tel:+88647840250,1309" class="info-link"><span>Phone</span>04-784-0250 ext.1202</a>
+        <div class="info-text"><span>Address</span>彰化縣福興鄉彰鹿路六段504巷195號</div>
+
+        <div class="section-label">// Taichung Plant</div>
+        <a href="tel:+886423590979" class="info-item info-link"><span>Phone</span>04-2359-0979</a>
+        <div class="info-text"><span>Address</span>台中市南屯區春社里精科中一路11號</div>
+
+        <a href="mailto:sd.01@jun-he.com.tw?subject=技術商務洽詢" class="btn-connect">INITIATE CONTACT</a>
+        
+        <div class="footer">© 2026 JUN HE TECHNOLOGY.</div>
+    </div>
+
+</body>
+</html>
